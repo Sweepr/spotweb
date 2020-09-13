@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML><HEAD>
+<TITLE>Thank you for donating!</TITLE>
+</HEAD><BODY>
+<script type="text/javascript">
+window.onload=function() {
+function countdown() {
+if ( typeof countdown.counter == 'undefined' ) {
+    countdown.counter = 10; // initial count
+    }
+if(countdown.counter > 0) {
+	document.getElementById('count').innerHTML = countdown.counter--;
+    setTimeout(countdown, 1000);
+    }
+else {
+    location.href = 'http://www.nzbstars.com/';
+    }
+}
+countdown();
+};
+</script>
+<meta http-equiv="Refresh" content="10; URL=http://www.nzbstars.com"> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center><img src="thanks.jpg" alt="thankyou"></center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center><font color="blue"><H1>Your donation is highly appreciated!</H1></font></center>
+<center><font color="blue"><H1>It will be used to further develop NZBStars.com</H1></font></center>
+<center><font color="blue"><H1>And also to keep the server alive!</H1></font></center>
+<!--#echo var="REQUEST_URI" -->
+<HR>
+<br>
+<I><!--#echo var="HTTP_HOST" --></I>
+<center><H3>Your transaction has been completed, and a receipt for your donation has been emailed to you.</H3></center>
+<center><H3>You may log into your account at www.paypal.com to view details of this transaction.</H3></center>
+<br>
+<center><p>We will escort you back to NZBstars in <span id="count"></span> seconds.. </p></center>
+</BODY></HTML>
