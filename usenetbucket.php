@@ -1,0 +1,1 @@
+<?php header("Location: http://www.usenetbucket.com/?a_aid=7d19559d6032299526e74b22e464b9b8"); ?>
